@@ -1,0 +1,86 @@
+
+body {
+	/*width: 1242px;
+	height: 2208px;*/
+
+}
+.jiantou {
+	margin-top: 130px;
+	margin-left: 828px;
+}
+.wrap {
+
+	width: 640px;
+	height: 1139px;
+	margin: 0px auto;
+	background: url(../img/bg.jpg);
+	position: relative;
+}
+/*p.test {
+	color: red;
+	font-size: 30px;
+}*/
+
+.btns {
+	width: 640px;
+	height: 100px;
+	position: absolute;
+	top: 430px;
+	/*margin: 330px auto;*/
+}
+.btns a {
+	display: inline-block;
+	text-indent: -99999px;
+	width: 201px;
+	height: 64px;
+}
+.btns a.ios {
+	margin-left: 90px;
+	margin-right: 40px;
+	background: url(../img/ios.png) no-repeat center 0;
+	background-size: cover;
+}
+.btns a.android {
+	background: url(../img/android.png) no-repeat center 0;
+
+	background-size: cover;
+}
+
+
+
+#weixinMsg {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    top: 91px;
+    left: 50%;
+    margin-left: -120px;
+}
+#weixinMsg img {
+	width: 85%;
+	/*height: 530px;*/
+}
+/*#weixinMsg  .close {
+z-index: 1001;
+  width: 61px;
+  height:61px;
+  display: block;
+  background: transparent url(../img/lit_07.jpg) no-repeat scroll 0 0;
+  position: absolute;
+  right: -423px;
+  top: 0;
+  text-indent: -9999px;
+}*/
+#shadow {
+    display: none;
+}
+#shadow{
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  background-color: rgb(0,0,0);
+  opacity: 0.5;
+  display: none;
+}
+

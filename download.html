@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640,user-scalable=yes">
+    <title>暴风英雄下载页</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/download.css">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?246c465252de86305471f352ee1215b6";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!--<p>11111</p>-->
+        <div class="btns">
+            <a class="ios" href="">ios下载</a>
+            <a class="android" href="">android下载</a>
+        </div>
+    </div>
+    <div id="weixinMsg" class="weixin">
+        <img src="img/tip.png">
+        <a href="javascript:;" class="close"></a>
+    </div>
+    <div id="shadow"></div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+        // alert(window.navigator.userAgent);
+
+
+        var useragent = window.navigator.userAgent.toLowerCase();
+
+
+        $('div.btns a.android').click(function() {
+            var d = document;
+
+            var oShadow = d.getElementById('shadow');
+            var scrollHeight = d.documentElement.scrollHeight || d.body.scrollHeight;
+            $('#shadow,#weixinMsg .close').click(function() {
+                oShadow.style.display = 'none';
+                $("#weixinMsg").hide();
+
+            });
+            if (useragent.match(/weibo/i) == 'weibo') {
+
+                oShadow.style.display = 'block';
+                oShadow.style.height = scrollHeight + 'px';
+                d.getElementById("weixinMsg").style.display = 'block';
+            }
+            if (useragent.match(/MicroMessenger/i) == 'micromessenger') {
+
+                oShadow.style.display = 'block';
+                oShadow.style.height = scrollHeight + 'px';
+                d.getElementById("weixinMsg").style.display = 'block';
+
+            }
+
+            if ((useragent.match(/(Android)/i))) {
+
+                location.replace("http://zcfytx.dl.hoolaigames.com/temp/20160405_zckz/%E4%B8%AD%E8%B6%85%E9%A3%8E%E4%BA%91.apk ");
+
+            } else if ((useragent.match(/(iPhone|iPod|ios|iOS|iPad)/i))) {
+                location.replace("http://tracking.hoolai.com/tracking/249/");
+
+            } else {
+                location.replace("http://sj.bfyx3d.hulai.com/download.html");
+            }
+
+
+
+        });
+
+        $('div.btns a.ios').click(function() {
+            var d = document;
+
+            var oShadow = d.getElementById('shadow');
+            var scrollHeight = d.documentElement.scrollHeight || d.body.scrollHeight;
+            $('#shadow,#weixinMsg .close').click(function() {
+                oShadow.style.display = 'none';
+                $("#weixinMsg").hide();
+
+            });
+            if (useragent.match(/weibo/i) == 'weibo') {
+
+                oShadow.style.display = 'block';
+                oShadow.style.height = scrollHeight + 'px';
+                d.getElementById("weixinMsg").style.display = 'block';
+
+                // location.replace("http://erweimakz.zcfy.hulai.com");
+                // alert(location.href);
+            }
+            if (useragent.match(/MicroMessenger/i) == 'micromessenger') {
+
+                oShadow.style.display = 'block';
+                oShadow.style.height = scrollHeight + 'px';
+                d.getElementById("weixinMsg").style.display = 'block';
+
+                // location.replace("http://erweimakz.zcfy.hulai.com");
+                // alert(location.href);
+
+            }
+            // 
+
+            if ((useragent.match(/(Android)/i))) {
+
+                location.replace("http://zcfytx.dl.hoolaigames.com/temp/20160405_zckz/%E4%B8%AD%E8%B6%85%E9%A3%8E%E4%BA%91.apk ");
+
+            } else if ((useragent.match(/(iPhone|iPod|ios|iOS|iPad)/i))) {
+                location.replace("http://tracking.hoolai.com/tracking/249/");
+
+            } else {
+                location.replace("http://sj.bfyx3d.hulai.com/download.html");
+            }
+
+
+            // alert(location.href);
+        });
+
+        // alert(window.navigator.userAgent.toLowerCase().match(/MicroMessenger/i));
+
+        if (useragent.match(/weibo/i) == 'weibo' || useragent.match(/MicroMessenger/i) == 'micromessenger') {
+
+        } else {
+            if ((useragent.match(/(Android)/i))) {
+
+                location.replace("http://zcfytx.dl.hoolaigames.com/temp/20160405_zckz/%E4%B8%AD%E8%B6%85%E9%A3%8E%E4%BA%91.apk ");
+
+            }
+
+            if ((useragent.match(/(iPhone|iPod|ios|iOS|iPad)/i))) {
+                location.replace("http://tracking.hoolai.com/tracking/249/");
+
+            }
+        }
+
+
+    });
+    </script>
+</body>
+
+</html>
